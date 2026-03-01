@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINGJOY 劲捷 — 专业影像器材</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Apple-Style Glass Nav ===== -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">KINGJOY</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#hero">首页</a>
+            <a href="#categories">产品</a>
+            <a href="#tripod-story">三脚架</a>
+            <a href="#stabilizer-story">稳定器</a>
+            <a href="#stories">故事</a>
+            <a href="#about">关于</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="菜单">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ===== Apple Hero: Particle BG + Giant Title ===== -->
+<section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+        <div class="hero-badge fade-in">EST. 2003 · GUANGDONG, CHINA</div>
+        <h1 class="hero-title fade-in">KINGJOY</h1>
+        <p class="hero-subtitle fade-in delay-1">一支三脚架，无限可能</p>
+        <p class="hero-desc fade-in delay-2">专为户外风光与野生动物摄影打造的专业器材<br>碳纤维旗舰系列，极致轻量，极致稳定</p>
+        <div class="hero-actions fade-in delay-3">
+            <a href="#categories" class="btn btn-primary">探索产品</a>
+            <a href="#about" class="btn btn-ghost">了解更多</a>
+        </div>
+        <div class="scroll-hint fade-in delay-3">
+            <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Apple Scroll-Story 1: Tripod ===== -->
+<section class="scroll-story" id="tripod-story">
+    <div class="scroll-story-sticky">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80" alt="雪山日出" class="scroll-bg">
+        <div class="scroll-overlay"></div>
+        <div class="scroll-text-wrap">
+            <div class="scroll-text-item" data-step="0">
+                <p class="label">摄影三脚架</p>
+                <h2>稳如磐石<br>轻若无物</h2>
+            </div>
+            <div class="scroll-text-item" data-step="1">
+                <h2>碳纤维 &<br>铝合金</h2>
+                <p class="desc">从专业摄影棚到户外荒野<br>劲捷三脚架始终是你最可靠的伙伴</p>
+            </div>
+            <div class="scroll-text-item" data-step="2">
+                <div class="scroll-stats">
+                    <div class="stat"><span class="num" data-target="26">0</span><span class="unit">条</span><span class="lbl">专业流水线</span></div>
+                    <div class="stat"><span class="num" data-target="600">0</span><span class="unit">+</span><span class="lbl">熟练技工</span></div>
+                    <div class="stat"><span class="num" data-target="40">0</span><span class="unit">+</span><span class="lbl">出口国家</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Manfrotto-Style Category Tabs ===== -->
+<section class="categories" id="categories">
+    <div class="container">
+        <p class="sec-label fade-up">产品系列</p>
+        <h2 class="sec-title fade-up">为有想法的创作者而生</h2>
+        <div class="cat-tabs">
+            <button class="cat-tab active" data-tab="tripods">三脚架</button>
+            <button class="cat-tab" data-tab="stabilizers">稳定器</button>
+            <button class="cat-tab" data-tab="heads">云台</button>
+            <button class="cat-tab" data-tab="live">直播器材</button>
+        </div>
+        <div class="cat-panel active" id="tab-tripods">
+            <div class="cat-hero-card">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&q=80" alt="山湖日落">
+                <div class="cat-hero-text">
+                    <h3>稳定你的每一次创作</h3>
+                    <p>碳纤维 / 铝合金 / 便携旅行款 / 独脚架</p>
+                    <a href="#" class="btn btn-sm">浏览系列 →</a>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=400&q=80" alt=""><span>碳纤维旗舰</span></div>
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=400&q=80" alt=""><span>铝合金专业款</span></div>
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=400&q=80" alt=""><span>便携旅行款</span></div>
+            </div>
+        </div>
+        <div class="cat-panel" id="tab-stabilizers">
+            <div class="cat-hero-card">
+                <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=800&q=80" alt="非洲草原">
+                <div class="cat-hero-text">
+                    <h3>让运镜丝般顺滑</h3>
+                    <p>手机稳定器 / 相机稳定器 / 运动相机款</p>
+                    <a href="#" class="btn btn-sm">浏览系列 →</a>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=400&q=80" alt=""><span>手机稳定器</span></div>
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1535338454528-1b22a4e4862f?w=400&q=80" alt=""><span>相机稳定器</span></div>
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=400&q=80" alt=""><span>运动相机款</span></div>
+            </div>
+        </div>
+        <div class="cat-panel" id="tab-heads">
+            <div class="cat-hero-card">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80" alt="雄鹰">
+                <div class="cat-hero-text">
+                    <h3>精准控制每一个角度</h3>
+                    <p>球形云台 / 三维云台 / 液压摄像云台 / 电动云台</p>
+                    <a href="#" class="btn btn-sm">浏览系列 →</a>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?w=400&q=80" alt=""><span>球形云台</span></div>
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400&q=80" alt=""><span>液压摄像云台</span></div>
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1484406566174-437a054e5014?w=400&q=80" alt=""><span>360°电动云台</span></div>
+            </div>
+        </div>
+        <div class="cat-panel" id="tab-live">
+            <div class="cat-hero-card">
+                <img src="https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=800&q=80" alt="北极光">
+                <div class="cat-hero-text">
+                    <h3>直播从未如此专业</h3>
+                    <p>环形补光灯 / 直播支架 / 手机夹具 / 配件套装</p>
+                    <a href="#" class="btn btn-sm">浏览系列 →</a>
+                </div>
+            </div>
+            <div class="cat-cards">
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&q=80" alt=""><span>环形补光灯</span></div>
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=400&q=80" alt=""><span>直播支架</span></div>
+                <div class="cat-card"><img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=400&q=80" alt=""><span>配件套装</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Apple Scroll-Story 2: Stabilizer ===== -->
+<section class="scroll-story" id="stabilizer-story">
+    <div class="scroll-story-sticky">
+        <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1920&q=80" alt="非洲草原" class="scroll-bg">
+        <div class="scroll-overlay"></div>
+        <div class="scroll-text-wrap">
+            <div class="scroll-text-item" data-step="0">
+                <p class="label">稳定器</p>
+                <h2>运镜如行云<br>画面似流水</h2>
+            </div>
+            <div class="scroll-text-item" data-step="1">
+                <h2>三轴无刷电机<br>智能跟随</h2>
+                <p class="desc">无论手机、运动相机还是专业摄像机<br>都能拍出电影级画面</p>
+            </div>
+            <div class="scroll-text-item" data-step="2">
+                <h2>让每一次运动<br>都丝滑</h2>
+                <a href="#" class="btn btn-primary">探索稳定器系列</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Apple Zoom Reveal ===== -->
+<section class="zoom-section">
+    <div class="zoom-sticky">
+        <div class="zoom-img-wrap">
+            <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=1920&q=80" alt="非洲象群">
+        </div>
+        <div class="zoom-text">
+            <p class="label">精工细造</p>
+            <h2>每一帧画面的背后<br>都有一台值得信赖的器材</h2>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Manfrotto-Style Stories ===== -->
+<section class="stories" id="stories">
+    <div class="container">
+        <p class="sec-label fade-up">创作者故事</p>
+        <h2 class="sec-title fade-up">真实故事，真实创作者</h2>
+        <p class="sec-desc fade-up">从每一张照片背后的热情中获取灵感</p>
+        <div class="stories-grid">
+            <a href="#" class="story-card fade-up">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80" alt="风光摄影师">
+                <div class="story-body">
+                    <h3>追逐光线：一位风光摄影师的旅途</h3>
+                    <p>从阿尔卑斯到喜马拉雅，用劲捷碳纤维三脚架记录世界上最壮丽的日出日落</p>
+                </div>
+            </a>
+            <a href="#" class="story-card fade-up">
+                <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=600&q=80" alt="野生动物摄影师">
+                <div class="story-body">
+                    <h3>近距离与自然对话：非洲野生动物纪录</h3>
+                    <p>在肯尼亚大草原上，劲捷液压云台帮助我捕捉到了猎豹冲刺的每一帧</p>
+                </div>
+            </a>
+            <a href="#" class="story-card fade-up">
+                <img src="https://images.unsplash.com/photo-1535338454528-1b22a4e4862f?w=600&q=80" alt="雪地拍摄">
+                <div class="story-body">
+                    <h3>Made in China，走向全球</h3>
+                    <p>20年匠心制造，劲捷的专业器材如何成为全球40多个国家创作者的首选</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Wildlife Gallery (Apple-style infinite scroll) ===== -->
+<section class="gallery-strip">
+    <div class="gallery-track">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=500&q=80" alt=""><span>非洲象群</span></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&q=80" alt=""><span>森林秘境</span></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=500&q=80" alt=""><span>丛林之王</span></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=500&q=80" alt=""><span>极光之夜</span></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1484406566174-437a054e5014?w=500&q=80" alt=""><span>火烈鸟群</span></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?w=500&q=80" alt=""><span>翠鸟捕鱼</span></div>
+    </div>
+</section>
+
+<!-- ===== About (Apple dark section + Manfrotto 3 values) ===== -->
+<section class="about" id="about">
+    <div class="container">
+        <p class="sec-label fade-up" style="color:var(--blue)">关于劲捷</p>
+        <h2 class="sec-title fade-up">26,000㎡ 智造基地<br>匠心铸就专业</h2>
+        <div class="about-grid">
+            <div class="about-text fade-up">
+                <p>广东劲捷科技有限公司，专业影像器材源头厂家。拥有氧化中心、CNC精密加工中心、注塑加工中心、模具制造中心和组装车间，26条专业流水线，600+名熟练技工。</p>
+                <p>品牌商标已在39个国家注册，产品出口至欧洲、美洲、亚洲、非洲、大洋洲等40多个国家及地区。</p>
+            </div>
+            <div class="values-row">
+                <div class="value fade-up">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4L30 16H42L32 24L36 38L24 30L12 38L16 24L6 16H18Z"/></svg>
+                    <h4>20年品牌积淀</h4>
+                    <p>2003年创立至今</p>
+                </div>
+                <div class="value fade-up">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="14" width="36" height="24" rx="3"/><circle cx="24" cy="26" r="8"/><circle cx="24" cy="26" r="3"/></svg>
+                    <h4>中国智造</h4>
+                    <p>26条专业流水线</p>
+                </div>
+                <div class="value fade-up">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="24" r="18"/><line x1="4" y1="24" x2="44" y2="24"/><ellipse cx="24" cy="24" rx="10" ry="18"/></svg>
+                    <h4>全球化布局</h4>
+                    <p>产品远销40+国家</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA (Apple dark full-screen with starry sky) ===== -->
+<section class="cta">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1920&q=80" alt="星空雪山" class="cta-bg">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+        <h2 class="fade-up">准备好升级你的<br>影像装备了吗？</h2>
+        <p class="fade-up">访问官方商城，或联系销售团队获取专属方案</p>
+        <div class="cta-actions fade-up">
+            <a href="https://www.cnkingjoy.com" target="_blank" class="btn btn-primary btn-lg">访问官网</a>
+            <a href="#" class="btn btn-ghost btn-lg">联系我们</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col"><h4>产品</h4><a href="#">摄影三脚架</a><a href="#">摄像三脚架</a><a href="#">云台</a><a href="#">稳定器</a><a href="#">直播器材</a></div>
+            <div class="footer-col"><h4>解决方案</h4><a href="#">风光摄影</a><a href="#">野生动物</a><a href="#">视频制作</a><a href="#">直播电商</a><a href="#">OEM/ODM</a></div>
+            <div class="footer-col"><h4>支持</h4><a href="#">联系我们</a><a href="#">售后服务</a><a href="#">保修政策</a><a href="#">查找经销商</a></div>
+            <div class="footer-col"><h4>关于</h4><a href="#">公司介绍</a><a href="#">品牌故事</a><a href="#">新闻资讯</a><a href="#">加入我们</a></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 广东劲捷科技有限公司 KINGJOY. All rights reserved.</p>
+            <div class="footer-links"><a href="#">隐私政策</a><a href="#">使用条款</a></div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
